@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import '../node_modules/vanilla-infinite-marquee/infinite-marquee.css';
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root{
+  --light-color: #fdfdfd;
+  --dark-color: #141414;
+}
+
+body{
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  font-family: "Space Mono", monospace;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 50px;
+  overflow-x: hidden;
+}
+
+.head_logo{
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 200px;
+  line-height: 150px;
+}
+.head_logo, .subtitle{
+  text-align: center;
+}
+
+.marquee{
+  border-top: 0.15rem solid var(--dark-color);
+  border-bottom: 0.15rem solid var(--dark-color);
+  margin: 50px 0;
+  padding: 15px;
+  width: 100vw;
+}
+
+.marquee .skillBox{
+  padding: 0 30px;
+  border-right: 0.08rem solid var(--dark-color);
+  font-size: 20px;
+}
+
+.marquee .skillBox:first-of-type{
+  border-left: 0.08rem solid var(--dark-color);
+}
+
+
+
+
+.service_sec,.contact_sec{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.service_sec{
+  height: 300px;
+}
+.sec_title{
+  font-family: "Inter", sans-serif;
+  font-size: 38px;
+  text-transform: uppercase;
+}
+
+.services{
+  padding: 20px 0;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+
+.contact_sec{
+  padding: 30px;
+  outline: 0.1rem solid var(--dark-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact_sec .contact_head{
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.contact_btn{
+  font-family: "Inter", sans-serif;
+  width: fit-content;
+  padding: 10px 40px;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  outline: 0.1rem solid var(--dark-color);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.contact_btn:hover{
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
